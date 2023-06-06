@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .calculator {
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: right;
+        }
+
+        .calculator h1 {
+            text-align: center;
+        }
+
+        .formulaScreen {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .outputScreen {
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .digits {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .digits button {
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+            background-color: #eee;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .jumbo {
+            grid-column: 1 / span 2;
+        }
+
+        .jumbo,
+        .clear {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
+        .operators button {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        .equals {
+            background-color: #28a745;
+            color: #fff;
+            grid-column: 3 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div id="app">
+        <div class="calculator">
+            <div class="formulaScreen"></div>
+            <div class="outputScreen" id="display">0</div>
+            <div class="digits">
+                <button class="jumbo clear" id="clear">AC</button>
+                <button class="operators" id="divide">/</button>
+                <button class="operators" id="multiply">x</button>
+                <button id="seven">7</button>
+                <button id="eight">8</button>
+                <button id="nine">9</button>
+                <button class="operators" id="subtract">-</button>
+                <button id="four">4</button>
+                <button id="five">5</button>
+                <button id="six">6</button>
+                <button class="operators" id="add">+</button>
+                <button id="one">1</button>
+                <button id="two">2</button>
+                <button id="three">3</button>
+                <button class="jumbo" id="zero">0</button>
+                <button id="decimal">.</button>
+                <button class="equals" id="equals">=
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"> </script>
+    <script src="bundle.js"></script>
+    <script crossorigin="" src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin="" src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js> </script>
+</body>
+
+</html>
